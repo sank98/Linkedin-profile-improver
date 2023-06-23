@@ -1,0 +1,143 @@
+% This template is designed to offer an aesthetically pleasing resume that adheres to a formal and institutional tone, making it suitable for applications to companies and research centers requiring a high degree of professionalism. Navy blue has been chosen as the primary color to align with these objectives.
+% The code is well-documented and annotated, allowing users to easily customize and modify it according to their needs. Please note that the template's content is meant to be humorous and should not be taken literally. We are grateful for your interest in using this template for your professional endeavors.
+% Author: Christian Maria Giannetti
+
+%----------------------------------------------------------------------------------------
+%  Packages And Other Document Configurations
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+% Document margins
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+
+% Color and hyperlink packages
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Footnote and margin adjustment packages
+\usepackage{footnote}
+\usepackage{changepage} 
+
+% Fontawesome package for icons
+\usepackage{fontawesome}
+
+% Tabularx package for custom tables
+\usepackage{tabularx}
+
+% Define navyblue color
+\definecolor{navyblue}{RGB}{0,54,123}
+
+%----------------------------------------------------------------------------------------
+%   Customizations
+%----------------------------------------------------------------------------------------
+
+% Define italicitem, bolditem, and plainitem commands
+\newcommand{\italicitem}[1]{\item{\textit{#1}}}
+\newcommand{\bolditem}[1]{\item{\textbf{#1}}}
+\newcommand{\plainitem}[1]{\item{#1}}
+
+% Define user-friendly link command for hyperlinks
+\newcommand{\link}[2]{{\href{#1}{#2}}}
+
+\newcommand{\entry}[2]{#1 & #2 \tabularnewline} % Defines an entry with two arguments: #1 for the first column and #2 for the second column
+
+%----------------------------------------------------------------------------------------
+%   Define envsection command for defining a new environment section
+%----------------------------------------------------------------------------------------
+
+\newcommand{\tableEnv}[2]{%
+  \begin{rSection}{#1} % Begin rSection with the given name
+    \begin{adjustwidth}{0.0in}{0.1in} % Set the left and right margins
+      \begin{tabularx}{\linewidth}{@{} >{\bfseries}l @{\hspace{6ex}} X @{}}
+        #2 % Print the content inside the tabularx environment
+      \end{tabularx}
+    \end{adjustwidth}
+  \end{rSection}
+}
+
+%----------------------------------------------------------------------------------------
+%   Begin document
+%----------------------------------------------------------------------------------------
+
+% Set name with navyblue color
+
+\name{\color{navyblue} Prasoon Banerjee}
+
+\begin{document}
+
+\printPersonalInfo{
+  \personalInfo{\tag{E-mail}\info{abc@gmail.com} \tag{Telephone number}\info{+91-XXXXXXXXXX}}
+  \personalInfo{\tag{LinkedIn}\info{https://www.linkedin.com/in/prasoon-banerjee-60a154159}}
+  }
+%----------------------------------------------------------------------------------------
+%   Education section
+%----------------------------------------------------------------------------------------
+    \begin{rSection}{Education}
+    
+\begin{rSubsectionNoBullet}{\bf Jabalpur Engineering College}{}{Bachelor of Technology - BTech, Industrial and production }{2016 - 2020}
+\end{rSubsectionNoBullet}
+\hfill
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%   Work experience section
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work experience}
+\begin{rSubsection}{Tata Consultancy Services · Full-time}{Jan 2023 - Present }{Systems Engineer}{Bengaluru, Karnataka, India }
+                \item Currently working as a Systems Engineer at Tata Consultancy Services in Bengaluru, India
+                \item Joined the company in January 2023 as a full-time employee
+                \item Involved in design, development, and implementation of various software applications
+                \item Collaborate with cross-functional teams to identify and resolve technical issues
+\end{rSubsection}
+\begin{rSubsection}{Infosys}{Jul 2022 - Jan 2023 }{Senior System Engineer}{Skills: Git }
+                    \item As a Senior System Engineer, responsible for planning and implementing Git version control for software development team
+                    \item Led training sessions for team members on utilizing Git for collaboration and code management
+                    \item Implemented branching and merging strategies to streamline development workflows
+                    \item Developed scripts and tools to automate Git workflows and improve efficiency
+\end{rSubsection}
+\begin{rSubsection}{Infosys}{Nov 2020 - Jun 2022 }{Systems Engineer}{}
+                    \item Worked as a Systems Engineer from Nov 2020 to Jun 2022
+                    \item Proficient in Java programming language
+                    \item Developed and maintained software systems using Java
+                    \item Implemented software solutions to resolve complex technical challenges
+\end{rSubsection}
+\begin{rSubsection}{Gun Carriage Factory, Jabalpur · Internship}{Jun 2019 }{Industrial Trainee}{}
+                \item Conducted research on the manufacturing processes and assembly lines of the Gun Carriage Factory in Jabalpur.
+                \item Assisted in the planning and implementation of several projects related to enhancing production efficiency and quality.
+                \item Worked closely with senior engineers to analyze production data and identify areas of improvement.
+                \item Gained hands-on experience in operating various types of machinery and equipment commonly used in the manufacturing industry.
+\end{rSubsection}
+\begin{rSubsection}{Singh Automotive Engineering Company · Internship}{Jun 2019 }{Industrial Trainee}{Jabalpur, India}
+                \item Worked as an Industrial Trainee at Singh Automotive Engineering Company in Jabalpur, India during June 2019.
+                \item Completed a variety of tasks during my internship that allowed me to gain real-world experience in the automotive engineering industry.
+                \item Collaborated with team members on various projects, including design development and production planning.
+                \item Assisted in inspecting and testing automobiles to gather data for analysis and improvement purposes.
+\end{rSubsection}
+\begin{rSubsection}{Water Treatment plant}{Jun 2018 }{Industrial Engineering Intern}{}
+                \item Assisted in the implementation and optimization of water treatment processes and systems
+                \item Conducted research and analysis on new water treatment technologies and their potential impact on plant efficiency and sustainability
+                \item Collaborated with cross-functional teams to identify and troubleshoot operational issues
+                \item Developed and maintained standard operating procedures for water treatment processes
+\end{rSubsection}
+\end{rSection}
+%----------------------------------------------------------------------------------------
+% Technical skills section
+%----------------------------------------------------------------------------------------
+
+\tableEnv{Skills}{
+    \entry{Programming Languages/Tools}{Git, Java, Spring Boot, Rest Api, Spring MVC, Python (Programming Language), Angular, HTML5, Cascading Style Sheets (CSS), Bootstrap, JavaScript, Microsoft Excel, Public Speaking, Leadership, Team Leadership, Git, Java, Spring Boot, Rest Api, Spring MVC, Python (Programming Language), Angular, HTML5, Cascading Style Sheets (CSS), Bootstrap, JavaScript, Microsoft Excel, Public Speaking, Leadership, Team Leadership}
+}%----------------------------------------------------------------------------------------
+% Most relevant projects section
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Certifications}{
+\item{$\sbullet[.65]$} Oracle Certified Associate, Java SE 8 Programmer | Oracle
+\item{$\sbullet[.65]$} Business Analyst | Aspiring Minds
+\item{$\sbullet[.65]$} Catia | Udemy
+\item{$\sbullet[.65]$} Data Processing Specialist | Aspiring Minds
+\item{$\sbullet[.65]$} Proficiency in English | Aspiring Minds
+\item{$\sbullet[.65]$} Software Development Trainee | Aspiring Minds
+\item{$\sbullet[.65]$} Solid Works | Udemy
+\item{$\sbullet[.65]$} in English Comprehension | Aspiring Minds
+}\end{document}\n
